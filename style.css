@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-position: left top,right bottom;
+    background-repeat: no-repeat, no-repeat;
+    color: #817680;
+    font-family: "League Spartan", sans-serif;
+}
+.parent{
+    background-color: transparent;
+}
+.container{
+    padding: 20px;
+    padding-top: 50px;
+}
+h1{
+    margin-bottom: 20px;
+    color: #4A1F4B;
+    line-height: 30px;
+    font-weight: 700;
+}
+.section1{
+        
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.sec2{
+    background-color: #F7F2F8;
+    color: #432645;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size:medium;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.section3{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.sec3{
+    background-color: #512050;
+    color: white;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+span{
+    color: #B669A2;
+}
+
+@media screen and ( min-width:800px) and (max-width:958px){
+    .container{
+        width: 80%;
+    }
+
+    .parent{
+
+        justify-items: center;
+    }
+    
+}
+
+@media screen and (min-width:960px){
+    body{
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        background-position: left top,right bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
+    .parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+     .container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 75%;
+        padding-top: 0px;
+     }
+     
+      .coat{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+      }
+      .section1{
+        width: 30%;
+        padding: 0px 40px 0px 0px;
+        text-align: start;
+        margin-right: 100px;
+      }
+      .section2{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        padding: 0px;
+      }
+      .sec2{
+        flex-direction: row;
+        position: relative;
+        top:40px ;
+        width: 82%;
+        padding-left: 15px;
+        padding-right: 20px;
+        margin-right: 0px;
+       
+     }
+     .star{
+        margin-right: 20px;
+     }
+     .colm2{
+        left: 40px;
+     }
+     .colm3{
+        left: 80px;
+     }
+
+     .section3{
+        flex-direction: row;
+        height: 45%;
+        position: relative;
+        
+     }
+     .sec3{
+        position: relative;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+     }
+     
+     .irene{
+        top: 20px;
+     }
+     .anne{
+        top: 40px;
+        margin-right: 0px;
+     }
+}
