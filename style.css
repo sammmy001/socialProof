@@ -30,7 +30,9 @@ h1{
     text-align: center;
     margin-bottom: 20px;
 }
-
+.section1 p{
+    overflow-x: visible;
+}
 
 .sec2{
     background-color: #F7F2F8;
@@ -85,6 +87,13 @@ span{
     }
     
 }
+/* so the star rating don't wrap */
+@media screen and (min-width:960px) and  (max-width:1148px){
+ .star{
+    width:50% ;
+ }
+ 
+}
 
 @media screen and (min-width:960px){
     body{
@@ -108,14 +117,17 @@ span{
      
       .coat{
         display: flex;
-        justify-content: space-between;
         margin-bottom: 40px;
       }
       .section1{
-        width: 30%;
-        padding: 0px 40px 0px 0px;
+        flex: 60%;
+        height: 100%;
         text-align: start;
-        margin-right: 100px;
+      }
+      h1{
+        font-size:50px;
+        line-height:40px ;
+        width: 80%;
       }
       .section2{
         display: flex;
@@ -131,10 +143,11 @@ span{
         padding-left: 15px;
         padding-right: 20px;
         margin-right: 0px;
-       
+        flex-wrap: nowrap;
      }
      .star{
         margin-right: 20px;
+     
      }
      .colm2{
         left: 40px;
@@ -166,3 +179,9 @@ span{
         margin-right: 0px;
      }
 }
+
+@media screen and (min-width:1320px){
+    h1{
+        width:60% ;
+    }
+ }
